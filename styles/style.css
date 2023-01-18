@@ -11,6 +11,7 @@ body {
     width: 100%;
     margin: 0 auto;
     padding: 0 30px;
+
 }
 
 /* Header style  */
@@ -38,6 +39,7 @@ body {
     margin: 80px 0;
     gap: 100px;
 }
+
 .influencer-img {
     width: 100%;
     height: auto;
@@ -70,6 +72,34 @@ body {
     margin-left: 10px;
 }
 
+/* brand section */
+.brand {
+    display: flex;
+    gap: 5%;
+    align-items: center;
+    margin: 20px 30px;
+    /* width: 100%; */
+}
+
+/* .brand-1 {
+    display: flex;
+    justify-content: space-between;
+    width: 57.14%;
+    align-items: center;
+}
+
+.brand-2 {
+    display: flex;
+    justify-content: space-between;
+    width: 42.86%;
+    align-items: center;
+} */
+
+.brand-name img {
+    width: 100%;
+    height: auto;
+}
+
 
 /*------------------- Mobile responsive ------------------------*/
 @media screen and (max-width: 576px) {
@@ -97,6 +127,38 @@ body {
         flex-direction: column-reverse;
         padding: 0 20px;
     }
+
+    /* brand section */
+    .brand {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        gap: 5%;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 30px;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    /* .brand-1 {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+    }
+
+    .brand-2 {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+    }
+
+    .brand-name img {
+        width: 100%;
+        height: auto;
+    } */
+
 }
 
 /* tablet responsiv */
@@ -104,6 +166,7 @@ body {
     .header {
         margin-left: 34px;
     }
+
     .influencer {
         margin: 60px 0;
         gap: 70px;
