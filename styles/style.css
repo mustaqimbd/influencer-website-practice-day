@@ -1,0 +1,112 @@
+/* font imported  */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;500;600;700&family=Work+Sans:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&display=swap');
+
+/* common style  */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 992px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+/* Header style  */
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header {
+    margin: 0;
+    color: #3A3A3A;
+}
+
+.nav-links a {
+    text-decoration: none;
+    margin-right: 34px;
+    color: #3A3A3A;
+    font-weight: 600;
+    line-height: 35px;
+}
+
+/* Start Your journey section styles */
+.influencer {
+    display: flex;
+    margin: 80px 0;
+    gap: 100px;
+}
+.influencer-img {
+    width: 100%;
+    height: auto;
+}
+
+.influencer-text h1 {
+    font-weight: 700;
+    font-size: 41px;
+    line-height: 70px;
+    color: #3A3A3A;
+}
+
+.influencer-text p {
+    font-weight: 600;
+    line-height: 24px;
+    color: #3A3A3A;
+}
+
+.btn-primary {
+    color: white;
+    background: #E02C6D;
+    border-radius: 41px;
+    padding: 10px 24px;
+    font-weight: 700;
+    line-height: 24px;
+    border: none;
+}
+
+.fa-arrow-right {
+    margin-left: 10px;
+}
+
+
+/*------------------- Mobile responsive ------------------------*/
+@media screen and (max-width: 576px) {
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    /* Header style  */
+    .nav {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Start Your journey section styles */
+    .influencer {
+        margin: 40px 0;
+        gap: 50px;
+        flex-direction: column-reverse;
+        padding: 0 20px;
+    }
+}
+
+/* tablet responsiv */
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    .header {
+        margin-left: 34px;
+    }
+    .influencer {
+        margin: 60px 0;
+        gap: 70px;
+        padding: 0 30px;
+    }
+}
