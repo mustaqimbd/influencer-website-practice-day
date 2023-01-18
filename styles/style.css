@@ -78,26 +78,59 @@ body {
     gap: 5%;
     align-items: center;
     margin: 20px 30px;
-    /* width: 100%; */
 }
-
-/* .brand-1 {
-    display: flex;
-    justify-content: space-between;
-    width: 57.14%;
-    align-items: center;
-}
-
-.brand-2 {
-    display: flex;
-    justify-content: space-between;
-    width: 42.86%;
-    align-items: center;
-} */
 
 .brand-name img {
     width: 100%;
     height: auto;
+}
+
+/* popular collection section */
+.collection-items {
+    background: #AAAAAA;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.collection-title {
+    text-align: center;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 70px;
+    color: #3A3A3A;
+}
+
+.collection {
+    padding: 10px;
+}
+
+.collection-img img {
+    width: 100%;
+    height: auto;
+}
+
+.collection-text h1 {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 40px;
+    color: #18191F;
+}
+
+.collection-text h2 {
+    color: rgba(0, 0, 0, 0.87);
+    font-weight: 400;
+    font-size: 24px;
+    margin: 15px 0;
+}
+
+.collection-text p {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 143%;
+    letter-spacing: 0.018em;
+    color: #787885;
+    margin: 10px 0;
 }
 
 
@@ -132,36 +165,20 @@ body {
     .brand {
         display: grid;
         grid-template-columns: repeat(4, auto);
-        gap: 5%;
-        align-items: center;
         justify-content: center;
-        margin: 20px 30px;
         width: 100%;
         flex-direction: column;
     }
-
-    /* .brand-1 {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        align-items: center;
+    /* collection section style */
+    .collection-items {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
     }
-
-    .brand-2 {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        align-items: center;
-    }
-
-    .brand-name img {
-        width: 100%;
-        height: auto;
-    } */
 
 }
 
-/* tablet responsiv */
+/* ----------------- tablet responsive ---------------------------------*/
 @media screen and (min-width: 577px) and (max-width: 768px) {
     .header {
         margin-left: 34px;
@@ -171,5 +188,10 @@ body {
         margin: 60px 0;
         gap: 70px;
         padding: 0 30px;
+    }
+    .collection-items {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
     }
 }
